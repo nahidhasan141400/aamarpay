@@ -213,9 +213,7 @@ import { TransactionInfo } from "aamarpay.v2";
 
 if you want to know more check out aamarpay official website
 
-[﻿www.aamarpay.com/](https://www.aamarpay.com/)
-
----
+## [﻿www.aamarpay.com/](https://www.aamarpay.com/)
 
 terms
 
