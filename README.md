@@ -72,7 +72,7 @@ payment class Constructor has 3 Parameters
 new Payment('store_id','signature_key',isLive)
 ```
 
-**Example **
+**Example**
 
 ```
 new Payment('aamarpaytest','dbb74894e82415a2f7ff0ec3a97e4183',false)
