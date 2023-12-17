@@ -1,5 +1,5 @@
 {
-  "name": "aamarpay",
+  "name": "aamarpay.v2",
   "version": "1.1.0",
   "description": "A simple library for ammar pay payment gateway",
   "main": "dist/index.js",
@@ -18,9 +18,10 @@
   "keywords": [
     "node",
     "payment",
-    "ammarpay",
+    "aamarpay",
     "payment gateway",
-    "bangladesh"
+    "bangladesh",
+    "digital payment"
   ],
   "author": "Nahid Hasan <nahidhasan141400@gmail.com>",
   "license": "MIT",
