@@ -14,5 +14,3 @@ jobs:
         with:
           node-version: 20.x
       - run: npm install
-      - name: Build packedg
-        run: npm run build
