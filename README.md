@@ -1,8 +1,8 @@
 # aamarPay.v2
 
-amarpay.v2 is a library used for easy integration of amarpay payment gateway with node applications
+aamarpay.v2 is a library used for easy integration of aamarpay payment gateway with node applications
 
-> amarpay.v2 হল একটি লাইব্রেরি যা নোড অ্যাপ্লিকেশনের সাথে amarpay পেমেন্ট গেটওয়ে সহজে ইন্টিগ্রেশন করার জন্য ব্যাবহৃত হয়
+> aamarpay.v2 হল একটি লাইব্রেরি যা নোড অ্যাপ্লিকেশনের সাথে aamarpay পেমেন্ট গেটওয়ে সহজে ইন্টিগ্রেশন করার জন্য ব্যাবহৃত হয়
 
 ![image.png](https://eraser.imgix.net/workspaces/hHEwyT8y11OD7vgA7su7/tSznLtvMGrRi0MTceIR3wGwzYGg2/khgZy0EobEuJAicRUcEu8.png?ixlib=js-3.7.0 "image.png")
 
@@ -17,13 +17,13 @@ amarpay.v2 is a library used for easy integration of amarpay payment gateway wit
 
 **Installation**
 
-```
+```bash
 npm i aamarpay.v2
 ```
 
 **Usage**
 
-```
+```js
 import { Payment } from "aamarpay.v2";
 
 const Start = async () => {
@@ -49,14 +49,14 @@ const Start = async () => {
       fail_url: "/",
       success_url: "/",
     });
-    console.log( res); //return the payment URL
+    console.log(res); //return the payment URL
   } catch (error) {
     console.log(error);
   }
 };
 ```
 
-```
+```js
 import { Payment } from "aamarpay.v2";
 ```
 
@@ -68,21 +68,21 @@ payment class Constructor has 3 Parameters
 2. signature key = string
 3. is Live = Booleans
 
-```
-new Payment('store_id','signature_key',isLive)
+```js
+new Payment("store_id", "signature_key", isLive);
 ```
 
 **Example**
 
-```
-new Payment('aamarpaytest','dbb74894e82415a2f7ff0ec3a97e4183',false)
+```js
+new Payment("aamarpaytest", "dbb74894e82415a2f7ff0ec3a97e4183", false);
 ```
 
 this credential was provided by Aamarpay Sandbox docs [﻿check here](https://aamarpay.readme.io/reference/initiate-payment-json)
 
 **init method**
 
-```
+```js
 [instance].init(payload);
 ```
 
@@ -97,7 +97,7 @@ Payload is an Object that has property 4 property
 
 **Data Object Property :**
 
-```
+```ts
 {
   amount: string;
   currency: "BDT" | "USD" | "EUR"| "INR" | "PKR" | "CAD"| "AUD" | "CNY" | "RUB"| "SAR" | "QAR";
@@ -121,8 +121,8 @@ Payload is an Object that has property 4 property
 
 **typeScript type:**
 
-```
-import { AamarpayRequestData } from "aamarpay.v2"
+```ts
+import { AamarpayRequestData } from "aamarpay.v2";
 ```
 
 and the `init()` method returned a promise and the result was a URL for the payment page
@@ -131,7 +131,7 @@ and the `init()` method returned a promise and the result was a URL for the paym
 
 **Search method:**
 
-```
+```js
 [instance].Search("transactions_id");
 ```
 
@@ -141,7 +141,7 @@ this method is used to retrieve the transaction information base on transaction 
 
 this return a promise and result is
 
-```
+```ts
 {
   pg_txnid: string;
   mer_txnid: string;
@@ -207,8 +207,8 @@ this return a promise and result is
 
 **typeScript type:**
 
-```
-import { TransactionInfo} from "aamarpay.v2"
+```ts
+import { TransactionInfo } from "aamarpay.v2";
 ```
 
 if you want to know more check out aamarpay official website
