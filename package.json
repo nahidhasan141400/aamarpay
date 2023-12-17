@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "ts-node ./__test__/test.ts"
   },
   "repository": {
     "type": "git",
@@ -24,14 +25,18 @@
   "author": "Nahid Hasan <nahidhasan141400@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nahidhasan141400/ntcp/issues"
+    "url": "https://github.com/nahidhasan141400/ammarpay/issues"
   },
-  "homepage": "https://github.com/nahidhasan141400/ntcp#readme",
+  "homepage": "https://github.com/nahidhasan141400/ammarpay/blob/main/README.md",
   "devDependencies": {
     "@types/node": "^20.10.1",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.2",
+    "ts-node": "^10.9.2"
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^1.6.2"
+  }
 }
