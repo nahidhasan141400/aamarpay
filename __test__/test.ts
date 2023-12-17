@@ -1,4 +1,4 @@
-import Payment from "../src/index";
+import { Payment } from "../dist/index";
 
 const init = async () => {
   const pay = new Payment(

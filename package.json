@@ -1,5 +1,5 @@
 {
-  "name": "ammarpay",
+  "name": "aamarpay",
   "version": "1.0.2",
   "description": "A simple library for ammar pay payment gateway",
   "main": "dist/index.js",
