@@ -1,0 +1,37 @@
+{
+  "name": "ammarpay",
+  "version": "1.0.0",
+  "description": "A simple library for ammar pay payment gateway",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahidhasan141400/ammarpay.git"
+  },
+  "keywords": [
+    "node",
+    "payment",
+    "ammarpay",
+    "payment gateway",
+    "express",
+    "server",
+    "nahid"
+  ],
+  "author": "Nahid Hasan <nahidhasan141400@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nahidhasan141400/ntcp/issues"
+  },
+  "homepage": "https://github.com/nahidhasan141400/ntcp#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.1",
+    "typescript": "^5.3.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
