@@ -1,6 +1,6 @@
 {
   "name": "ammarpay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple library for ammar pay payment gateway",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,9 +18,7 @@
     "payment",
     "ammarpay",
     "payment gateway",
-    "express",
-    "server",
-    "nahid"
+    "bangladesh"
   ],
   "author": "Nahid Hasan <nahidhasan141400@gmail.com>",
   "license": "MIT",

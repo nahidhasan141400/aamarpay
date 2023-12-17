@@ -2,7 +2,7 @@ import { PaymentInit } from "./PaymentInit";
 import { Search } from "./Search";
 import { PaymentInitI } from "./Type";
 
-export class Payment {
+class Payment {
   constructor(
     private storeID: string,
     private signature_key: string,
@@ -29,3 +29,5 @@ export class Payment {
     });
   }
 }
+
+export default Payment;

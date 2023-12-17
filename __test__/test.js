@@ -1,1 +1,34 @@
-"{\"pg_service_charge_bdt\":\"86.60\",\"amount_original\":\"4123.90\",\"gateway_fee\":\"\",\"pg_service_charge_usd\":\"Not-Available\",\"pg_card_bank_name\":\"Not Available\",\"pg_card_bank_country\":\"Not Available\",\"card_number\":\"1234XXXXXXXXX123\",\"card_holder\":\"\",\"status_code\":\"2\",\"pay_status\":\"Successful\",\"success_url\":\"http://localhost:5000/api/v1/payment_handler/bookings\",\"fail_url\":\"http://localhost:5000/api/v1/payment_handler/fail\",\"cus_name\":\"Nahid Sagor\",\"cus_email\":\"nahidhasan141400@gmail.com\",\"cus_phone\":\"+8801728255163\",\"currency_merchant\":\"BDT\",\"convertion_rate\":\"\",\"ip_address\":\"113.11.89.118\",\"other_currency\":\"4123.90\",\"pg_txnid\":\"AAM1702018751113498\",\"epw_txnid\":\"AAM1702018751113498\",\"mer_txnid\":\"1702018751086Nah35\",\"store_id\":\"aamarpaytest\",\"merchant_id\":\"aamarpaytest\",\"currency\":\"BDT\",\"store_amount\":\"4037.30\",\"pay_time\":\"2023-12-08 12:59:21\",\"amount\":\"4123.90\",\"bank_txn\":\"1091275883891\",\"card_type\":\"bKash-bKash\",\"reason\":\"Not Available\",\"pg_card_risklevel\":\"0\",\"pg_error_code_details\":\"Not Available\",\"opt_a\":\"508cbe2c-f6be-4667-9390-cfc4e0ede4e8\",\"opt_b\":\"4e035057-493f-40d3-956b-9784a1be0026\",\"opt_c\":\"\",\"opt_d\":\"\"}";
+const { Payment } = require("../lib");
+console.log("🚀 ~ file: test.js:2 ~ Payment:", Payment);
+
+const init = async () => {
+  const pay = new Payment(
+    "aamarpaytest",
+    "dbb74894e82415a2f7ff0ec3a97e4183",
+    false
+  );
+
+  try {
+    // const res = await pay.init({
+    //   data: {
+    //     amount: "100",
+    //     currency: "BDT",
+    //     cus_email: "nahid@gmail.com",
+    //     cus_name: "nahid hasan",
+    //     cus_phone: "01741013363",
+    //     desc: "this i a demo",
+    //     tran_id: "202312171058nahid",
+    //     cus_add1: "demo address",
+    //   },
+    //   cancel_url: "/",
+    //   fail_url: "/",
+    //   success_url: "/",
+    // });
+
+    const res = await pay.Search("202312171058nahid");
+    console.log("🚀 ~ file: test.ts:21 ~ init ~ res:", res);
+  } catch (error) {
+    console.log("🚀 ~ file: test.ts:24 ~ init ~ error:", error);
+  }
+};
+init();
